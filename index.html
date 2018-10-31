@@ -18,8 +18,15 @@
 			<!--解决办法：	添加了一个 -label 后缀	:key="value + '-label'"-->
 			解决办法：	用不一样的值
 		2.
-			报错：	
-			原因：	
-			解决办法：	
+			报错：	 warning  in ./src/assets/css/main.css
+
+					(Emitted value instead of an instance of Error) autoprefixer: G:\wuthier\demo\src\assets\css\main.css:169:5: You should write display: flex by final spec instead of display: box
+					
+					 @ ./src/assets/css/main.css 4:14-149 13:3-17:5 14:22-157
+					 @ ./src/main.js
+					 @ multi (webpack)-dev-server/client?http://localhost:8081 webpack/hot/dev-server ./src/main.js
+
+			原因：	路由错误
+			解决办法：		设置 assetsPublicPath: './',
 	</body>
 </html>
